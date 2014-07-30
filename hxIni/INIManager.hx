@@ -16,6 +16,7 @@ typedef Ini = Map< String, IniSection >;
 /**
  * Primary INI manager class. Used for reading and writing INI files.
  * For data format, checkout http://en.wikipedia.org/wiki/INI_file
+ * Also, check out http://stackoverflow.com/questions/3870019/javascript-parser-for-a-string-which-contains-ini-data
  * @author Wikiti
  */
 class INIManager
@@ -80,6 +81,11 @@ class INIManager
         if (ini[section] == null)
           ini[section] = new IniSection();
       }
+      
+      // Global
+      else if(line.length == 0 && section != GLOBAL_SECTION){
+        section = GLOBAL_SECTION;
+      };
     }
     
     return ini;
