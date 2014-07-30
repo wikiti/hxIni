@@ -50,6 +50,10 @@ Now, to parse this with hxIni, we must create an **Ini** object with **IniManage
 
     var ini: Ini = IniManager.LoadFromFile("example.ini");
 
+Or, if you have that stored in a **String**, you can use:
+
+    var ini: Ini = IniManager.LoadFromString(str_data);
+
 And, the access to parameters it's pretty simple. Imagine a *map* of *maps*, so a section if linked to a *map* of parameters, and you can access like this:
 
     var name = ini["owner"]["name"];
