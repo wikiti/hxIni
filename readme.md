@@ -85,5 +85,6 @@ This project has been made by:
 ## 6. Links ##
 
 - GitLab: [https://gitlab.com/wikiti/hxini](https://gitlab.com/wikiti/hxini)
+- HaxeLib: [http://lib.haxe.org/p/hxIni](http://lib.haxe.org/p/hxIni)
 - Wikipedia: [http://en.wikipedia.org/wiki/INI_file](http://en.wikipedia.org/wiki/INI_file)
 - INI Parsing: [http://stackoverflow.com/questions/3870019/javascript-parser-for-a-string-which-contains-ini-data](http://stackoverflow.com/questions/3870019/javascript-parser-for-a-string-which-contains-ini-data)
