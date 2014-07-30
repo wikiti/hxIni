@@ -74,22 +74,9 @@ Also, don't forget to **import** the classes!
 
 This project has been made by:
 
-<!-- Tabla -->
-<table cellspacing="0">
-  <tr  style="background-color: #E3E3E3;">
-    <td> <b>Avatar</b> </td>
-    <td> <b>Name</b> </td>
-    <td> <b>Nickname</b> </td>
-	<td> <b>Email</b> </td>
-  </tr>
-  <tr style="background-color: #FFFFFF;">
-    <td> <img width="64"src="http://imageshack.us/a/img209/6782/parrotav.png"/> </td>
-    <td> Daniel Herzog Cruz </td>
-    <td> <b>Wikiti</b> </td>
-	<td> <a href="mailto:wikiti.doghound@gmail.com"> wikiti.doghound@gmail.com</a> </td>
-  </tr>
-</table>
-<!-- Fin tabla -->
+| Avatar  | Name          | Nickname  | Email              |
+| ------- | ------------- | --------- | ------------------ |
+| ![](http://i59.tinypic.com/fasosx.jpg)  | Daniel Herzog | Wikiti | [wikiti.doghound@gmail.com](mailto:wikiti.doghound@gmail.com)
 
 ## 6. Links ##
 
