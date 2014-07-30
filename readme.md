@@ -20,7 +20,7 @@ Otherwise, you can download this repository as a zip from *GitLab* (you can try 
 
 Also, don't forget to add 
 
-    <haxelib name="actuate" />
+    <haxelib name="hxIni" />
 
 to your **xml** project file, or, for a standard *Haxe* project, add 
 
