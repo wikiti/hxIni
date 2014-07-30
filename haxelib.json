@@ -1,11 +1,11 @@
 {
   "name": "hxIni",
-  "url": "...",
+  "url": "https://gitlab.com/wikiti/hxini",
   "license": "MIT",
   "tags": [ "flash", "cpp", "neko", "js", "ini" ],
   "description": "hxIni is a fast, light and simple library to read and write INI files, using hashes.",
   "version": "1.0.0",
   "releasenote": "Primary release.",
-  "contributors": [ "wikiti" ],
+  "contributors": [ "Wikiti" ],
   "dependencies": {}
 }

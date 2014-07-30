@@ -19,7 +19,7 @@ typedef Ini = Map< String, IniSection >;
  * Also, check out http://stackoverflow.com/questions/3870019/javascript-parser-for-a-string-which-contains-ini-data
  * @author Wikiti
  */
-class INIManager
+class IniManager
 {
   /**
    * Global section name ("Global").
