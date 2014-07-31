@@ -1,10 +1,13 @@
 package hxIni;
 
+import hxIni.IniManager.Ini;
 import sys.io.File;
 import sys.FileSystem;
 
+import Lambda;
+
 /**
- * INI section (like [Program] or [Settings]). Used to organize variables. An Ini object is composed by IniSections
+ * INI section (like [Program] or [Settings]). Used to organize variables. An Ini object is composed by IniSections.
  */
 typedef IniSection = Map<String, String>;
 
@@ -86,9 +89,42 @@ class IniManager
       else if(line.length == 0 && section != GLOBAL_SECTION){
         section = GLOBAL_SECTION;
       };
+
     }
     
     return ini;
   }
   
+  /**
+   * Transform the ini object to an string and writes it to a file.
+   * @param ini Ini object to write to file.
+   * @param file File to be writed.
+   */
+  static public function WriteToFile(ini: Ini, file: String): Void {    
+    File.write(file).writeString( toString(ini) );
+  }
+  
+  /**
+   * Transform the ini object to an string.
+   * @param ini Ini object to transform.
+   * @return String representation of the ini object.
+   */
+  static public function toString(ini: Ini): String {
+    var result_str: String = "";
+    if (ini == null)
+      return result_str;
+
+    for (section in ini.keys()) {
+      if (Lambda.count(ini[section]) == 0)
+        continue;
+
+      result_str += "[" + section + "]\n";
+      for (param in ini[section].keys()) {
+        result_str += param + "=" + ini[section][param] + "\n";
+      }
+      result_str += "\n";
+    }
+    
+    return result_str;
+  }
 }

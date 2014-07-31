@@ -4,8 +4,8 @@
   "license": "MIT",
   "tags": [ "flash", "cpp", "neko", "js", "ini" ],
   "description": "hxIni is a fast, light and simple library to read and write INI files, using hashes.",
-  "version": "1.0.1",
-  "releasenote": "Testing haxelib stuff.",
+  "version": "1.1.0",
+  "releasenote": "Added new functions to IniManager (toString and WriteToFile).",
   "contributors": [ "wikiti" ],
   "dependencies": {}
 }

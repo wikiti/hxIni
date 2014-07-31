@@ -58,6 +58,11 @@ And, the access to parameters it's pretty simple. Imagine a *map* of *maps*, so 
 
     var name = ini["owner"]["name"];
 
+Finally, you can transform them to a string (after modifications), or save it to a file:
+
+    IniManager.WriteToFile(ini, "test.ini");
+    trace( IniManager.toString(ini) );
+
 Also, don't forget to **import** the classes!
 
     import hxIni.IniManager;
