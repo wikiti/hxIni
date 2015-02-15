@@ -13,6 +13,13 @@ typedef IniSection = Map<String, String>;
 
 /**
  * A Composition of IniSection. The main object of this library, and it's used to represent the INI data.
+ * 
+ * Data may be accessed this way:
+ *  
+ * <code>var ini: Ini = IniManager.LoadFromString("g="blablabla"\n[test]\na = 5\nb=6");</code><br>
+ * <code>trace(ini["Global"]["g"]) // Outputs "blablabla"</code><br>
+ * <code>trace(ini["test"]["a"])   // Outputs "5"</code><br>
+ * <code>trace(ini["test"]["b"])   // Outputs "6"</code><br>
  */
 typedef Ini = Map< String, IniSection >;
 
