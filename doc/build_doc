@@ -1,1 +1,1 @@
-haxelib run dox -o html -i doc.xml -in hxIni
+haxelib run dox -res res -o html -i doc.xml -in hxIni
