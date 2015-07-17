@@ -4,7 +4,7 @@
 hxIni is a fast, light and simple library to read and write INI files, using hashes.
 
 <div align="center">
-![](documentation/icon.png)
+![](doc/icon.png)
 <div align="left">
 
 Checkout [wikipedia](http://en.wikipedia.org/wiki/INI_file) for more information about **INI Files**.
