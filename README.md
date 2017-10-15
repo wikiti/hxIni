@@ -1,10 +1,12 @@
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE.md) [![Haxelib Version](https://img.shields.io/github/tag/wikiti/hxIni.svg?style=flat&label=haxelib)](http://lib.haxe.org/p/hxIni/)  [![CircleCI](https://circleci.com/gh/wikiti/hxIni.svg?style=shield)](https://circleci.com/gh/wikiti/hxIni)
+
 # hxIni
 
 ## Introduction
 hxIni is a fast, light and simple library to read and write INI files, using hashes.
 
 <div align="center">
-![](https://raw.githubusercontent.com/wikiti/hxIni/master/doc/icon.png)
+  <img src="https://raw.githubusercontent.com/wikiti/hxIni/master/doc/icon.png" />
 </div>
 
 Checkout [wikipedia](http://en.wikipedia.org/wiki/INI_file) for more information about **INI Files**.
