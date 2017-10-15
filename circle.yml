@@ -7,7 +7,7 @@ dependencies:
     - test/build
 
   pre:
-    - mkdir -p test/build examples/basic-example/bin
+    - mkdir -p test/build
     - sudo add-apt-repository ppa:haxe/releases -y
     - sudo apt-get update
     - sudo apt-get install haxe -y --force-yes
@@ -16,6 +16,7 @@ dependencies:
     - mkdir ~/haxelib
     - haxelib setup ~/haxelib
     - haxelib install mcover
+    - haxelib install hxcpp
     - haxelib dev hxIni .
     - sudo ln -s /usr/lib/libneko.so.2 /usr/lib/libneko.so
 
