@@ -4,8 +4,8 @@
 hxIni is a fast, light and simple library to read and write INI files, using hashes.
 
 <div align="center">
-![](doc/icon.png)
-<div align="left">
+![](https://raw.githubusercontent.com/wikiti/hxIni/master/doc/icon.png)
+</div>
 
 Checkout [wikipedia](http://en.wikipedia.org/wiki/INI_file) for more information about **INI Files**.
 
@@ -14,9 +14,9 @@ Use ***haxelib*** to install the release version of the library (if avaliable):
 
 	> haxelib install hxIni
 
-Otherwise, you can download this repository as a zip from *GitLab* (you can try [this link](https://gitlab.com/wikiti/hxini/repository/archive.zip)), and use the local installer from ***haxelib***:
+Otherwise, you can download this repository as a zip from *GitHub* (you can try [this link](https://github.com/wikiti/hxIni/archive/master.zip)), and use the local installer from ***haxelib***:
 
-    > haxelib local hxini-23e2b4(...).zip
+    > haxelib local hxIni-master.zip
 
 Also, don't forget to add
 
@@ -48,11 +48,11 @@ There we have two sections (*owner* and *database*), and each one has its own pa
 
 Now, to parse this with hxIni, we must create an **Ini** object with **IniManager** class:
 
-    var ini: Ini = IniManager.LoadFromFile("example.ini");
+    var ini: Ini = IniManager.loadFromFile("example.ini");
 
 Or, if you have that stored in a **String**, you can use:
 
-    var ini: Ini = IniManager.LoadFromString(str_data);
+    var ini: Ini = IniManager.loadFromString(str_data);
 
 And, the access to parameters it's pretty simple. Imagine a *map* of *maps*, so a section if linked to a *map* of parameters, and you can access like this:
 
@@ -60,7 +60,7 @@ And, the access to parameters it's pretty simple. Imagine a *map* of *maps*, so 
 
 Finally, you can transform them to a string (after modifications), or save it to a file:
 
-    IniManager.WriteToFile(ini, "test.ini");
+    IniManager.writeToFile(ini, "test.ini");
     trace( IniManager.toString(ini) );
 
 Also, don't forget to **import** the classes!
