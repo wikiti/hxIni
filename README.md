@@ -1,6 +1,6 @@
-# hxIni #
+# hxIni
 
-## 1. Introduction ##
+## Introduction
 hxIni is a fast, light and simple library to read and write INI files, using hashes.
 
 <div align="center">
@@ -9,7 +9,7 @@ hxIni is a fast, light and simple library to read and write INI files, using has
 
 Checkout [wikipedia](http://en.wikipedia.org/wiki/INI_file) for more information about **INI Files**.
 
-## 2. Install ##
+## Install
 Use ***haxelib*** to install the release version of the library (if avaliable):
 
 	> haxelib install hxIni
@@ -18,17 +18,17 @@ Otherwise, you can download this repository as a zip from *GitLab* (you can try 
 
     > haxelib local hxini-23e2b4(...).zip
 
-Also, don't forget to add 
+Also, don't forget to add
 
     <haxelib name="hxIni" />
 
-to your **xml** project file, or, for a standard *Haxe* project, add 
+to your **xml** project file, or, for a standard *Haxe* project, add
 
     -l hxini
 
 in your **hxml** build file.
 
-## 3. Usage ##
+## Usage
 
 Let's explain this with an example. Imagine you have this **example.ini** file:
 
@@ -37,10 +37,10 @@ Let's explain this with an example. Imagine you have this **example.ini** file:
     [owner]
     name=John Doe
     organization=Acme Widgets Inc.
-     
+
     [database]
     ; use IP address in case network name resolution is not working
-    server=192.0.2.62 
+    server=192.0.2.62
     port=143
     file="payroll.dat"
 
@@ -68,7 +68,7 @@ Also, don't forget to **import** the classes!
     import hxIni.IniManager;
     import hxIni.IniManager.Ini;
 
-## 4. Rules ##
+## Parse rules
 1. **Comments** will be **ignored**.
 2. Every **parameter** must belong to at least **one section**.
 3. If a **parameter** with an **used name** is found on the same section, it will be **replaced**.
@@ -79,17 +79,38 @@ Also, don't forget to **import** the classes!
 8. Parameters **keys** and **values** are **case sensitive**.
 9. ...
 
-## 5. Authors ##
+## Development
 
-This project has been made by:
+Clone the repository:
 
-| Avatar  | Name          | Nickname  | Email              |
+```shell
+$ git clone https://github.com/wikiti/hxini
+```
+
+Then, setup the development directory:
+
+```shell
+$ haxelib dev hxini hxini
+```
+
+To run tests use [munit](https://github.com/massiveinteractive/MassiveUnit):
+
+```shell
+$ haxelib install munit
+$ haxelib run munit test
+```
+
+## Contributors
+
+The following people have helped to develop this library:
+
+| Avatar  | Name          | Nickname  | Contact              |
 | ------- | ------------- | --------- | ------------------ |
-| ![](http://i59.tinypic.com/fasosx.jpg)  | Daniel Herzog | Wikiti | [wikiti.doghound@gmail.com](mailto:wikiti.doghound@gmail.com)
+| ![](https://gravatar.com/avatar/2ae6d81e0605177ba9e17b19f54e6b6c?s=64)  | Daniel Herzog | Wikiti | [wikiti.doghound@gmail.com](mailto:wikiti.doghound@gmail.com)
+| ![](https://avatars1.githubusercontent.com/u/90930?s=64)  | Thomas ten Cate | ttencate | [GitHub Profile](https://github.com/ttencate)
 
-## 6. Links ##
+## Links
 
-- GitLab: [https://gitlab.com/wikiti/hxini](https://gitlab.com/wikiti/hxini)
 - HaxeLib: [http://lib.haxe.org/p/hxIni](http://lib.haxe.org/p/hxIni)
 - Wikipedia: [http://en.wikipedia.org/wiki/INI_file](http://en.wikipedia.org/wiki/INI_file)
 - INI Parsing: [http://stackoverflow.com/questions/3870019/javascript-parser-for-a-string-which-contains-ini-data](http://stackoverflow.com/questions/3870019/javascript-parser-for-a-string-which-contains-ini-data)

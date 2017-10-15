@@ -1,0 +1,20 @@
+## Neko
+-main TestMain
+-lib munit
+-cp hxIni/
+-D test
+
+-cp test/test
+-neko test/build/neko_test.n
+
+--next
+
+# CPP
+-main TestMain
+-lib munit
+-cp hxIni/
+-D test
+
+-cp test/test
+#-D HXCPP_M64
+-cpp test/build/cpp_test
