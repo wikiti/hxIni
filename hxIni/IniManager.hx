@@ -64,7 +64,8 @@ class IniManager
     var regexp = {
       section: ~/^\[([^]]*)\]$/,
       param: ~/^([^=]+)=(.*)$/,
-      comment: ~/^;.*$/
+      comment: ~/^;.*$/,
+      blank: ~/^[ \n\r\t]$/
     };
 
     var ini: Ini = new Ini();
@@ -76,17 +77,12 @@ class IniManager
 
     // Parse
     for (line in lines) {
-      // Global
-      if (line.length == 0) {
-        section = GLOBAL_SECTION;
-        continue;
-      }
-
       line = StringTools.trim(line);
 
-      // Comment
-      if (regexp.comment.match(line))
+      // Comment or blank line
+      if (line.length == 0 || regexp.comment.match(line) || regexp.blank.match(line)) {
         continue;
+      }
 
       // Parameter (variable)
       else if (regexp.param.match(line)) {

@@ -71,15 +71,13 @@ Also, don't forget to **import** the classes!
     import hxIni.IniManager.Ini;
 
 ## Parse rules
-1. **Comments** will be **ignored**.
+1. **Comments** (lines starting with `;`) and **white lines** will be **ignored**.
 2. Every **parameter** must belong to at least **one section**.
 3. If a **parameter** with an **used name** is found on the same section, it will be **replaced**.
 4. If no section is declared, the **Global** section will be used by default (**IniManager.GLOBAL_SECTION**).
-5. If a **white line** (not comment) is found, then the following parameters, unless a section is declared, will belong to the **Global section**.
-6. **UTF-8** is usable, but not recommend.
-7. You can use **[Escaped characters](http://en.wikipedia.org/wiki/INI_file#Escape_characters)**.
-8. Parameters **keys** and **values** are **case sensitive**.
-9. ...
+5. **UTF-8** is usable, but not recommend.
+6. You can use **[Escaped characters](http://en.wikipedia.org/wiki/INI_file#Escape_characters)**.
+7. Parameters **keys** and **values** are **case sensitive**.
 
 ## Development
 
